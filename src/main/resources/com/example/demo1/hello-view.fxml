@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f3e5ab;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.HelloController">
+    <children>
+        <TableView fx:id="tableView" layoutX="26.0" layoutY="29.0" prefHeight="297.0" prefWidth="229.0">
+            <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="115.20001220703125" text="Продукты" />
+                <TableColumn fx:id="numberColumn" prefWidth="111.20001220703125" text="Количество" />
+            </columns>
+        </TableView>
+        <VBox layoutX="282.0" layoutY="29.0" prefHeight="150.0" prefWidth="267.0" spacing="5.0">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Продукты" />
+            <TextField fx:id="name" />
+            <Text layoutX="10.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество" />
+            <TextField fx:id="number" />
+            <Button fx:id="add" mnemonicParsing="false" onAction="#add" prefHeight="40.0" prefWidth="267.0" text="Добавить" />
+        </VBox>
+        <Button fx:id="delete" layoutX="282.0" layoutY="211.0" mnemonicParsing="false" onAction="#delete" prefHeight="78.0" prefWidth="127.0" text="Удалить" />
+        <Button fx:id="save" layoutX="422.0" layoutY="211.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="127.0" text="Сохранить" />
+    </children>
+</Pane>

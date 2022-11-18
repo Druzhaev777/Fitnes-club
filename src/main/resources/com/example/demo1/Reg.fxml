@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.ControllerReg">
+   <children>
+      <Button fx:id="back" layoutX="198.0" layoutY="227.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="102.0" text="Назад" />
+      <Button fx:id="done" layoutX="324.0" layoutY="227.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="102.0" text="Готово" />
+      <TextField fx:id="password1" layoutX="187.0" layoutY="180.0" prefHeight="25.0" prefWidth="248.0" />
+      <TextField fx:id="login1" layoutX="187.0" layoutY="135.0" prefHeight="25.0" prefWidth="248.0" />
+      <Label layoutX="114.0" layoutY="131.0" text="Логин:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="176.0" text="Пароль:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Text layoutX="135.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Регистрация">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
