@@ -56,6 +56,7 @@ public class HelloController {
 
     @FXML
     public void initialize() {
+
         save.setOnAction(cliсk -> {
             try {
                 String line = ("-"+" "+name.getText()+" ");
@@ -66,7 +67,7 @@ public class HelloController {
                 buffer=line2.getBytes();
                 fileOutputStream.write(buffer);
                 System.out.println("Успешное сохранение");
-
+//сохранение данных таблицы в файл
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }

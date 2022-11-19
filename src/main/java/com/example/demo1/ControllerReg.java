@@ -25,7 +25,7 @@ public class ControllerReg {
 
     @FXML
     void initialize() {
-
+//Регистрация, где логин и пароль записываются в txt файлы
         done.setOnAction(click -> {
             done.getText().trim();
             System.out.println("Логин:" + login1.getText());

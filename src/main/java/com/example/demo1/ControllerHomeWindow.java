@@ -35,7 +35,7 @@ public class ControllerHomeWindow {
             System.out.println("password: " + password.getText());
             join.getScene().getWindow().hide();
 
-
+//Чтение пароля из файла Data2
             try {
                 BufferedReader reader = new BufferedReader(new FileReader("D:\\Lesson\\labs\\demo1\\src\\main\\resources\\com\\example\\demo1\\Data.txt")) {
                 };
@@ -73,6 +73,7 @@ public class ControllerHomeWindow {
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
+            //Чтение логина из файла Data
             try {
                 BufferedReader reader = new BufferedReader(new FileReader("D:\\Lesson\\labs\\demo1\\src\\main\\resources\\com\\example\\demo1\\Data2.txt")) {
                 };
@@ -123,6 +124,7 @@ public class ControllerHomeWindow {
                 throw new RuntimeException(e);
             }
         });
+        //Переход на окно регистрации
         reg.setOnAction(click -> {
 
 
