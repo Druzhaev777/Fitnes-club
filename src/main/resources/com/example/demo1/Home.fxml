@@ -13,17 +13,7 @@
             <children>
                 <TextField id="login" fx:id="login" layoutX="200.0" layoutY="131.0" prefHeight="32.0" prefWidth="240.0" promptText="Логин" />
                 <TextField id="password" fx:id="password" layoutX="200.0" layoutY="185.0" prefHeight="30.0" prefWidth="240.0" promptText="Пароль" />
-                <Button id="exit" fx:id="exit" layoutX="490.0" layoutY="339.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="80.0" text="Выход">
-                    <font>
-                        <Font size="18.0" />
-                    </font>
-                </Button>
-                <Button fx:id="join" layoutX="190.0" layoutY="258.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="124.0" text="Войти">
-                    <font>
-                        <Font size="17.0" />
-                    </font>
-                </Button>
-                <Button fx:id="reg" layoutX="320.0" layoutY="258.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="124.0" text="Регистрация">
+                <Button fx:id="join" layoutX="247.0" layoutY="258.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="146.0" text="Войти">
                     <font>
                         <Font size="17.0" />
                     </font>
