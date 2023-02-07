@@ -35,13 +35,13 @@ public class ControllerHomeWindow {
             System.out.println("password: " + password.getText());
             join.getScene().getWindow().hide();
 
-//Чтение пароля из файла Data2
+//Чтение Логина из файла Data
             try {
                 BufferedReader reader = new BufferedReader(new FileReader("D:\\Lesson\\labs\\demo1\\src\\main\\resources\\com\\example\\demo1\\Data.txt")) {
                 };
                 String line;
                 while ((line = reader.readLine()) != null) {
-                    if (line.equals(login.getText().trim())){
+                    if (line.equals(login.getText().trim())) {
                         try {
                             FXMLLoader loader = new FXMLLoader();
                             loader.setLocation(getClass().getResource("hello-view.fxml"));
@@ -51,12 +51,12 @@ public class ControllerHomeWindow {
                             stage.setScene(new Scene(root));
                             stage.show();
                             join.getScene().getWindow().hide();
-                            stage.setTitle("Доставка молочных продуктов");
+                            stage.setTitle("Фитнес клуб");
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
                         System.out.println("password success");
-                    }else {
+                    } else {
                         FXMLLoader loader = new FXMLLoader();
                         loader.setLocation(getClass().getResource("Home.fxml"));
                         loader.load();
@@ -65,7 +65,7 @@ public class ControllerHomeWindow {
                         stage.setScene(new Scene(root));
                         stage.show();
                         join.getScene().getWindow().hide();
-                        stage.setTitle("Доставка молочных продуктов");
+                        stage.setTitle("Фитнес клуб");
                     }
                 }
             } catch (FileNotFoundException e) {
@@ -73,23 +73,23 @@ public class ControllerHomeWindow {
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-            //Чтение логина из файла Data
+            //Чтение Пароля из файла Data2
             try {
                 BufferedReader reader = new BufferedReader(new FileReader("D:\\Lesson\\labs\\demo1\\src\\main\\resources\\com\\example\\demo1\\Data2.txt")) {
                 };
                 String line;
                 while ((line = reader.readLine()) != null) {
 
-                    if (line.equals(password.getText().trim())){
+                    if (line.equals(password.getText().trim())) {
                         try {
                             FXMLLoader loader = new FXMLLoader();
-                           loader.setLocation(getClass().getResource("Hello.fxml"));
+                            loader.setLocation(getClass().getResource("Hello.fxml"));
                             loader.load();
                             Parent root = loader.getRoot();
                             Stage stage = new Stage();
                             stage.setScene(new Scene(root));
                             stage.show();
-                            stage.setTitle("Доставка молочных продуктов");
+                            stage.setTitle("Фитнес клуб");
                         } catch (Exception e) {
                             FXMLLoader loader = new FXMLLoader();
                             loader.setLocation(getClass().getResource("hello-view.fxml"));
@@ -99,12 +99,12 @@ public class ControllerHomeWindow {
                             stage.setScene(new Scene(root));
                             stage.show();
                             join.getScene().getWindow().hide();
-                            stage.setTitle("Доставка молочных продуктов");
+                            stage.setTitle("Фитнес клуб");
                             e.printStackTrace();
                         }
 
                         System.out.println("login success");
-                    }else {
+                    } else {
                         FXMLLoader loader = new FXMLLoader();
                         loader.setLocation(getClass().getResource("Hello.fxml"));
                         loader.load();
@@ -113,41 +113,16 @@ public class ControllerHomeWindow {
                         stage.setScene(new Scene(root));
                         stage.show();
                         join.getScene().getWindow().hide();
-                        stage.setTitle("Доставка молочных продуктов");
+                        stage.setTitle("Фитнес клуб");
                     }
 
                 }
-            } catch (FileNotFoundException e)
-            {
+            } catch (FileNotFoundException e) {
                 throw new RuntimeException(e);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
         });
-        //Переход на окно регистрации
-        reg.setOnAction(click -> {
-
-
-
-            try {
-                FXMLLoader loader = new FXMLLoader();
-                loader.setLocation(getClass().getResource("Reg.fxml"));
-                loader.load();
-                Parent root = loader.getRoot();
-                Stage stage = new Stage();
-                stage.setScene(new Scene(root));
-                stage.show();
-                reg.getScene().getWindow().hide();
-            } catch (Exception e) {
-                e.printStackTrace();
-                String asd = login.getText().trim();
-                password.setText(asd);
-
-            }
-        });
-
-
-
     }
 }
 
